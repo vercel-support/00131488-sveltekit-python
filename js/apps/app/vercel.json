@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/graphql", "destination": "/api/python/graphql" }
+    { "source": "/graphql", "destination": "/api/python/graphql" },
+    { "source": "/graphql-ext", "destination": "https://00131488-python-git-monorepo-approach.preview.vercel-support.app/graphql" }
   ]
 }
