@@ -1,5 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/graphql", "destination": "/api/test" }
+  "builds": [
+    {
+      "src": "vercel_app/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/admin/test.py"
+    }
   ]
 }
